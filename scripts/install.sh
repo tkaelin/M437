@@ -1,10 +1,12 @@
 #!/bin/bash
 #  
 # OS Ticket und MySQL starten
+export KUBECONFIG=$HOME/.kube/config
 kubectl apply -f ~/M437/mysql.yaml
 kubectl apply -f ~/M437/osticket.yaml
 
 # Web Server mit Anleitung
+sudo apt update
 sudo apt install -y apache2 jq markdown
 
 cat <<%EOF% | sudo tee /var/www/html/index.html
