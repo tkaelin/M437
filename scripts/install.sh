@@ -5,9 +5,9 @@ export KUBECONFIG=$HOME/.kube/config
 kubectl apply -f ~/M437/mysql.yaml
 kubectl apply -f ~/M437/osticket.yaml
 
-# Web Server mit Anleitung
-sudo apt update
-sudo apt install -y apache2 jq markdown
+# Web Server mit Anleitung - Port Konflikt mit K3s?
+# sudo apt update
+# sudo apt install -y apache2 jq markdown
 
 cat <<%EOF% | sudo tee /var/www/html/index.html
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
