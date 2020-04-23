@@ -1,6 +1,4 @@
-# M437
-
-Arbeiten im Support
+# M437 Arbeiten im Support
 
 ## Beschreibung
 
@@ -12,11 +10,11 @@ Es leitet Anfragen, die per E-Mail, Webformularen und Telefonanrufen erstellt wu
 
 **Guest User**
 
-URL http://[IP-Adresse]
+URL [http://${ADDR}](http://${ADDR})
 
 **Administrator**
   
-URL http://[IP-Adresse]:30080/scp/
+URL [http://${ADDR}/scp/](http://${ADDR}/scp)
 	
 * username: ostadmin
 * password: Admin1
