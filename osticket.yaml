@@ -37,7 +37,17 @@ spec:
         - name: MYSQL_HOST
           value: osticket-mysql
         - name: MYSQL_PASSWORD
-          value: secret        
+          value: secret 
+        - name: SMTP-HOST
+          value: mail.gmx.net
+        - name: SMTP_PORT
+          value: "25"
+        - name: SMTP_USER
+          value: "maas-test"
+        - name: SMTP_PASSWORD
+          value: "<notdefinedhere>"
+        - name: SMTP_FROM
+          value: osticket@tbz-osticket.ch
         ports:
         - containerPort: 80
           name: osticket
